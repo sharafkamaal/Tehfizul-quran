@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "siteName": "Al Madrasatul Arabia – Tahfeezul Quran, Hyderabad",
+    "description": "Quran memorisation (Hifz), Nazira with Tajweed, Diniyat and Arabic for boys and girls in Tadban, Hyderabad since 1994. 1800+ Huffaz graduated. Support the madrasa with Zakat, Sadaqah and student sponsorship.",
+    "keywords": "Hifz madrasa Hyderabad, Tahfeezul Quran, Quran memorisation, Nazira Tajweed, girls madrasa Hyderabad, Tadban, donate Zakat madrasa, Kafalat",
+    "pages": {
+      "about": {
+        "title": "About Us",
+        "description": "The story of the madrasa founded in 1994 in Tadban, Hyderabad by Hafiz Mohammed Abdul Ghani Sahab (R.A)."
+      },
+      "departments": {
+        "title": "Departments",
+        "description": "Hifz, Nazira, Diniyat, part-time Quran classes, Arabic, Speech & Oratory and Tas-heeh & Tazkiyah."
+      },
+      "donate": {
+        "title": "Donate & Support",
+        "description": "Sponsor a student, give Zakat or Sadaqah, and help build classrooms, rewire the building and dig a new borewell."
+      },
+      "gallery": {
+        "title": "Gallery",
+        "description": "Photos and videos of classes, events, Dastarbandi (Hifz completion) and the campus."
+      },
+      "admissions": {
+        "title": "Admissions",
+        "description": "Admission enquiries for Hifz, Nazira, Diniyat and part-time Quran classes for boys and girls."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "Address, phone, WhatsApp and map for the madrasa in Tadban, Hyderabad 500064."
+      }
+    }
+  },
+  "common": {
+    "shortName": "Al Madrasatul Arabia",
+    "subName": "Li-Tahfeezil Quranil Kareem",
+    "place": "Tadban, Hyderabad",
+    "estd": "Est. 1994",
+    "donateNow": "Donate Now",
+    "learnMore": "Learn More",
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "contribute": "Contribute",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "chatOnWhatsapp": "Chat with us on WhatsApp",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "copyLabel": "Copy {label}",
+    "raised": "Raised",
+    "goal": "Goal",
+    "funded": "{percent}% funded",
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "mainNav": "Main navigation",
+    "logoAlt": "Madrasa logo: a globe with the Kalima flag",
+    "placeholderNote": "Placeholder image"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "departments": "Departments",
+    "donate": "Donate",
+    "gallery": "Gallery",
+    "admissions": "Admissions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Est. 1994 · Tadban, Hyderabad",
+    "hadithTranslation": "“The best of you are those who learn the Quran and teach it.”",
+    "hadithSource": "Sahih al-Bukhari",
+    "slides": [
+      "The madrasa building in Tadban, Hyderabad",
+      "Students memorising the Quran in the Hifz class",
+      "A Dastarbandi ceremony honouring new Huffaz"
+    ],
+    "prev": "Previous slide",
+    "next": "Next slide",
+    "goTo": "Go to slide {n}",
+    "pause": "Pause slideshow",
+    "play": "Play slideshow"
+  },
+  "stats": {
+    "eyebrow": "Three decades of service",
+    "title": "Blessings by the numbers",
+    "items": {
+      "founded": "Founded",
+      "students": "Current students",
+      "teachers": "Teachers & staff",
+      "huffaz": "Huffaz graduated",
+      "nazira": "Completed Nazira with Tajweed"
+    },
+    "thousands": "Thousands"
+  },
+  "home": {
+    "about": {
+      "eyebrow": "Who we are",
+      "title": "A home for the Quran since 1994",
+      "text": "Founded in 1994 by Khadim-ul-Quran Hafiz Mohammed Abdul Ghani Sahab (R.A) with very limited means and complete trust in Allah, the madrasa has grown into a trusted institution of Hifz and Quranic learning for boys and girls in Tadban, Hyderabad.",
+      "points": [
+        "Hifz with Tajweed under expert Huffaz",
+        "Separate girls’ division – Madrasatut Tayyibaat",
+        "Islamic character and Sunnah practised daily"
+      ],
+      "badge": "Years of serving the Quran"
+    },
+    "departments": {
+      "eyebrow": "What we teach",
+      "title": "Our Departments",
+      "subtitle": "A complete Quranic education – from the first letters of Noorani Qaida to Hifz, understanding and character."
+    },
+    "needs": {
+      "eyebrow": "Current urgent needs",
+      "title": "Help us build for the next generation",
+      "subtitle": "The number of students keeps growing. These projects are needed now – every contribution, large or small, is a Sadaqah Jariyah."
+    },
+    "gallery": {
+      "eyebrow": "Glimpses",
+      "title": "Life at the Madrasa",
+      "subtitle": "Classes, gatherings and the joyful moments of Hifz completion."
+    }
+  },
+  "cta": {
+    "eyebrow": "Sadaqah Jariyah",
+    "title": "Your support keeps the Quran alive in hearts",
+    "text": "Many of our students pay less than half the fee, and many cannot pay at all. Sponsor a student, support a teacher, or help complete an urgent project today.",
+    "button": "See ways to give",
+    "bankTitle": "Direct bank transfer"
+  },
+  "about": {
+    "hero": {
+      "title": "About the Madrasa",
+      "subtitle": "Three decades of teaching, memorising and living the Book of Allah."
+    },
+    "story": {
+      "eyebrow": "Our story",
+      "title": "Founded on trust in Allah",
+      "paragraphs": [
+        "The greatest favour of Allah upon mankind is that He revealed the Quran to His beloved Prophet Muhammad ﷺ for the guidance and well-being of humanity. Allah Himself promised to preserve it, and He made its recitation, and the learning of its rules of Tajweed, a means of preserving it. Learning and teaching the Quran is therefore a source of immense blessing.",
+        "Feeling this importance and this need, and moved by deep religious zeal, Khadim-ul-Quran Hafiz Mohammed Abdul Ghani Sahab (R.A) – with very limited resources but complete reliance on Allah – laid the foundation of Madrasa Arabia Tahfeezul Quranil Kareem in Tadban, Hyderabad in 1994.",
+        "Allah blessed his early struggle. Through his tireless, day-and-night efforts, the special attention of scholars and the kind support of the community, the madrasa continued to progress by the grace and generosity of Allah. Seeing the growing need, a dedicated section for girls was established under the name Madrasatut Tayyibaat.",
+        "Through his continuous efforts to keep the educational standard high, with special care for religious upbringing, the number of students increased day by day."
+      ]
+    },
+    "today": {
+      "eyebrow": "The madrasa today",
+      "title": "A growing garden of the Quran",
+      "text": "Today the madrasa has more than 600 students, served by over 55 skilled teachers and staff. By the grace of Allah, more than 1800 boys and girls have been blessed with the treasure of Hifz, and thousands of boys and girls have learned Nazira Quran with Tajweed. Graduates of the madrasa include the children of well-known personalities of the city."
+    },
+    "leadership": {
+      "title": "Leadership",
+      "founderRole": "Founder",
+      "founderName": "Khadim-ul-Quran Hafiz Mohammed Abdul Ghani Sahab (R.A)",
+      "headRole": "Khadim-e-Madrasa",
+      "headName": "Hafiz Mohammed Zakariya"
+    },
+    "memorial": {
+      "eyebrow": "In loving memory",
+      "name": "Hafiz Mohammed Abdul Ghani Sahab",
+      "honorific": "(Rahimahullah)",
+      "title": "Khadim-ul-Quran · Founder",
+      "text": "He devoted his entire life to the service of the Quran, illuminating the hearts of countless boys and girls with the Book of Allah. On 17 Muharram 1447 AH (13 July 2025) he departed from this world, leaving behind this great institution as a lasting legacy of knowledge. May Allah fill his grave with light.",
+      "hijri": "17 Muharram 1447 AH",
+      "gregorian": "13 July 2025",
+      "inna": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+      "innaTranslation": "Indeed, to Allah we belong and to Him we shall return.",
+      "dua": "Ameen."
+    }
+  },
+  "departments": {
+    "hero": {
+      "title": "Departments",
+      "subtitle": "Seven departments working together to nurture Huffaz with knowledge, understanding and good character."
+    },
+    "central": "Central department",
+    "items": {
+      "hifz": {
+        "title": "Hifz",
+        "summary": "Memorisation of the Quran with Tajweed under expert Huffaz.",
+        "description": "The central department of the madrasa. Under the supervision of expert Huffaz, boys and girls memorise the Holy Quran with correct pronunciation and full attention to the rules of Tajweed. After completing Hifz, every student must complete 25 full revisions (daur) so that the memorisation becomes firm and lasting."
+      },
+      "nazira": {
+        "title": "Nazira",
+        "summary": "Noorani Qaida, Nazira Quran, Urdu, English and Math.",
+        "description": "Students learn Noorani Qaida, Nazira Quran, Urdu, English and Mathematics, together with practical training: the method of Salah, memorising Ahadith, and the Sunnah etiquette of eating, drinking and sleeping, along with other daily Islamic manners."
+      },
+      "diniyat": {
+        "title": "Diniyat",
+        "summary": "Essential Islamic rulings; Imamat and Khitabat training.",
+        "description": "Essential rulings on the pillars of Islam and on situations of daily life are taught from authentic books. Huffaz are also taught and trained in Imamat (leading prayer) and Khitabat (delivering sermons)."
+      },
+      "parttime": {
+        "title": "Part-time Quran Classes",
+        "summary": "Girls: Asr to Maghrib · Boys: Maghrib to Isha.",
+        "description": "For students attending school, Quran classes are held in the evening – for girls from Asr to Maghrib, and for boys from Maghrib to Isha."
+      },
+      "arabic": {
+        "title": "Arabic",
+        "summary": "Quran translation alongside Hifz.",
+        "description": "Alongside Hifz, boys and girls are taught the translation of the Quran. This newly introduced programme has proved very successful: children become blessed not only with memorising the Quran but also with understanding it."
+      },
+      "oratory": {
+        "title": "Speech & Oratory",
+        "summary": "Confident speaking on Islamic topics.",
+        "description": "To develop the ability to speak, students regularly practise delivering speeches on various religious topics, so that they can express what is in their hearts clearly and beautifully."
+      },
+      "tazkiyah": {
+        "title": "Tas-heeh & Tazkiyah",
+        "summary": "Recitation correction and spiritual reform.",
+        "description": "Respecting their status and position, separate Tas-heeh (recitation correction) sessions are arranged for the teachers, apart from the students. Gatherings of knowledge and spiritual reform (Tazkiyah) are also held, so that knowledge, practice and teaching methods keep improving."
+      }
+    },
+    "cta": {
+      "title": "Enrol your child in the service of the Quran",
+      "text": "Admissions are open for Hifz, Nazira and part-time classes for boys and girls.",
+      "button": "Admission enquiry"
+    }
+  },
+  "donate": {
+    "hero": {
+      "title": "Donate & Support",
+      "subtitle": "Be a partner in preserving the Book of Allah – a reward that continues long after we are gone."
+    },
+    "ayah": "مَّثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ",
+    "ayahTranslation": "“The example of those who spend their wealth in the way of Allah is like a seed which grows seven ears.” — Al-Baqarah 2:261",
+    "intro": {
+      "eyebrow": "How the madrasa is supported",
+      "title": "Relying on Allah – and on you",
+      "paragraphs": [
+        "To keep its system of education and administration running well, the madrasa relies upon Allah, and on the following means: the generous support of well-wishers of the Ummah, and reasonable fees from students who are able to pay.",
+        "However, a large number of students pay less than half the fee, which creates considerable difficulty in running the educational system. There are also many deserving students who can pay no fee at all and have no sponsor."
+      ],
+      "appeal": "Well-wishers are requested to take responsibility for such students. It will be a provision for the Hereafter for you, and a great help to the madrasa.",
+      "highlights": [
+        {
+          "value": "600+",
+          "label": "students depend on this madrasa"
+        },
+        {
+          "value": "Many",
+          "label": "pay less than half the fee"
+        },
+        {
+          "value": "Many",
+          "label": "cannot pay any fee at all"
+        }
+      ]
+    },
+    "needs": {
+      "eyebrow": "Current urgent needs",
+      "title": "Projects that cannot wait",
+      "subtitle": "With the steadily growing number of students, the needs of the madrasa keep increasing. These are the most important and immediate ones.",
+      "items": {
+        "floor": {
+          "title": "Additional floor on the building",
+          "description": "An additional floor is urgently needed on the 3-storey building so that classrooms can be built for English and other subjects. As per the engineer’s estimate at ₹1,500 per sq. ft., the total cost is ₹75 lakh."
+        },
+        "wiring": {
+          "title": "Complete electrical rewiring",
+          "description": "The existing wiring on all three floors is more than 25 years old and has become weak in many places. New wiring is urgently needed for everyone’s safety."
+        },
+        "sound": {
+          "title": "New sound system",
+          "description": "For educational and administrative work, spiritual gatherings and other programmes, the current sound system is insufficient. A new system is needed."
+        },
+        "generator": {
+          "title": "Generator with installation",
+          "description": "Power cuts and severe summer heat make classes very hard – especially for girls studying in hijab and burqa – and cut off water for wudu. A generator strong enough for the borewell is needed."
+        },
+        "borewell": {
+          "title": "New borewell",
+          "description": "The madrasa’s old borewells have dried up. With so many students there is a great need for water, so a large new borewell is urgently required."
+        }
+      },
+      "total": "Total required for urgent projects"
+    },
+    "ways": {
+      "eyebrow": "Ways to help",
+      "title": "Choose how you would like to give",
+      "items": [
+        {
+          "icon": "graduation",
+          "title": "Sponsor a student (Kafalat)",
+          "text": "Take responsibility for the education of a deserving student."
+        },
+        {
+          "icon": "teacher",
+          "title": "Sponsor a teacher’s salary",
+          "text": "Support a Hafiz or teacher who dedicates their life to teaching."
+        },
+        {
+          "icon": "bricks",
+          "title": "Donate construction material",
+          "text": "Give cement, sand or steel – fully or partially – or its cost."
+        },
+        {
+          "icon": "coins",
+          "title": "Zakat, Sadaqah & Atiyat",
+          "text": "Give your Zakat, Sadaqat and donations where they build Huffaz."
+        },
+        {
+          "icon": "hands",
+          "title": "Isal-e-Sawab",
+          "text": "Contribute on behalf of your deceased parents or relatives."
+        },
+        {
+          "icon": "phone",
+          "title": "Visit or call us",
+          "text": "Visit the madrasa or contact us by phone to contribute in person."
+        }
+      ]
+    },
+    "bank": {
+      "eyebrow": "Bank details",
+      "title": "Transfer directly to the madrasa",
+      "accountName": "Account name",
+      "accountNumber": "Account number",
+      "bank": "Bank",
+      "ifsc": "IFSC",
+      "upi": "UPI ID",
+      "pending": "To be added",
+      "scan": "Scan to pay with any UPI app",
+      "chequeNote": "Cheques & drafts in favour of “Al Madrasatul Arabia Li-Tafezil Quranil Kareem”.",
+      "receiptNote": "After donating, please send a WhatsApp message with your name so we can thank you and make dua for you."
+    },
+    "closing": "May Allah grant a great reward to all who take part in this noble cause.",
+    "closingDua": "آمين"
+  },
+  "gallery": {
+    "hero": {
+      "title": "Gallery",
+      "subtitle": "Moments of learning, celebration and devotion."
+    },
+    "filterLabel": "Filter photos by category",
+    "filters": {
+      "all": "All",
+      "classes": "Classes",
+      "events": "Events",
+      "dastarbandi": "Hifz Completion (Dastarbandi)",
+      "campus": "Campus",
+      "girls": "Girls’ Section"
+    },
+    "girlsNote": "Out of respect for privacy, photos of the girls’ section never show faces.",
+    "imageAlt": "{category} – photo {n}",
+    "open": "Open photo: {alt}",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "counter": "{current} of {total}",
+    "videos": {
+      "eyebrow": "Watch",
+      "title": "Videos",
+      "subtitle": "Recitations, programmes and Dastarbandi ceremonies.",
+      "play": "Play video: {title}",
+      "comingSoon": "Video coming soon",
+      "titles": [
+        "Quran recitation by our students",
+        "Annual Dastarbandi ceremony",
+        "A day at the madrasa"
+      ]
+    }
+  },
+  "admissions": {
+    "hero": {
+      "title": "Admissions",
+      "subtitle": "Give your child the gift of the Quran."
+    },
+    "depts": {
+      "eyebrow": "Programmes",
+      "title": "Departments available"
+    },
+    "timings": {
+      "eyebrow": "Timings",
+      "title": "Class timings",
+      "items": [
+        {
+          "label": "Hifz & Nazira (full-time)",
+          "time": "Morning to afternoon – contact the office for exact times"
+        },
+        {
+          "label": "Part-time classes – Girls",
+          "time": "Asr to Maghrib"
+        },
+        {
+          "label": "Part-time classes – Boys",
+          "time": "Maghrib to Isha"
+        }
+      ],
+      "note": "Timings may change in Ramadan and during holidays."
+    },
+    "steps": {
+      "title": "How to apply",
+      "items": [
+        "Send the enquiry form or call the office.",
+        "Visit the madrasa with your child for a short assessment.",
+        "Complete the admission formalities and begin classes."
+      ]
+    },
+    "form": {
+      "title": "Admission enquiry",
+      "subtitle": "Fill in the form and we will contact you, in shaa Allah."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We would be happy to hear from you."
+    },
+    "formTitle": "Send us a message",
+    "callTitle": "Call us",
+    "whatsappTitle": "WhatsApp",
+    "whatsappText": "Message us any time on WhatsApp.",
+    "addressTitle": "Address",
+    "emailTitle": "E-mail",
+    "mapTitle": "Map showing the madrasa in Tadban, Hyderabad",
+    "openMap": "Open in Google Maps",
+    "visitTitle": "Visit us",
+    "visitText": "You are warmly welcome to visit the madrasa, meet the teachers and see the students."
+  },
+  "address": {
+    "line1": "Adjacent to Masjid Sayyidina Umar Farooq-e-Azam (R.A)",
+    "line2": "H.No. 19-2-156/1/A/10, Tadban",
+    "line3": "Hyderabad – 500064, Telangana, India"
+  },
+  "form": {
+    "name": "Full name",
+    "studentName": "Student’s name",
+    "parentName": "Parent / guardian name",
+    "phone": "Phone number",
+    "email": "E-mail",
+    "subject": "Subject",
+    "message": "Message",
+    "department": "Department",
+    "selectDepartment": "Select a department",
+    "optional": "optional",
+    "submit": "Send message",
+    "submitEnquiry": "Send enquiry",
+    "sending": "Sending…",
+    "success": "JazakAllahu khayran! Your message has been sent. We will contact you soon.",
+    "error": "Sorry, the message could not be sent. Please try again or contact us on WhatsApp.",
+    "dismiss": "Dismiss",
+    "errors": {
+      "required": "This field is required.",
+      "phone": "Please enter a valid phone number.",
+      "email": "Please enter a valid e-mail address.",
+      "tooShort": "Please write a little more.",
+      "tooLong": "This is too long."
+    }
+  },
+  "footer": {
+    "about": "A trusted institution for Hifz, Nazira and Islamic education for boys and girls in Tadban, Hyderabad since 1994.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "follow": "Follow us",
+    "comingSoon": "{network} – coming soon",
+    "rights": "All rights reserved.",
+    "mapTitle": "Location map"
+  },
+  "mobileBar": {
+    "call": "Call",
+    "donate": "Donate"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has been moved.",
+    "home": "Back to home"
+  }
+}
