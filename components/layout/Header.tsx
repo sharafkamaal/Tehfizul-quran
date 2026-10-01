@@ -51,7 +51,7 @@ export function Header() {
         scrolled ? 'border-gold/20 bg-cream/90 shadow-card backdrop-blur-md' : 'border-transparent bg-cream',
       )}
     >
-      <div className="container flex h-20 items-center justify-between gap-4">
+      <div className="container flex h-16 items-center md:h-20 justify-between gap-4">
         <Link href="/" className="flex min-w-0 items-center gap-3 rounded-xl" aria-label={t('nav.home')}>
           <Image
             src="/images/logo.png"
@@ -59,13 +59,13 @@ export function Header() {
             width={64}
             height={57}
             priority
-            className="h-12 w-auto shrink-0 md:h-14"
+            className="h-10 w-auto shrink-0 md:h-14"
           />
           <span className="flex min-w-0 flex-col">
-            <span className="truncate text-base font-bold leading-tight text-deep md:text-lg">
+            <span className="truncate text-base font-bold !leading-snug text-deep md:text-lg">
               {t('common.shortName')}
             </span>
-            <span className="truncate text-xs leading-tight text-gold-dark md:text-sm">{t('common.subName')}</span>
+            <span className="hidden truncate text-xs !leading-snug text-gold-dark min-[400px]:block md:text-sm">{t('common.subName')}</span>
           </span>
         </Link>
 
@@ -107,7 +107,7 @@ export function Header() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? t('common.closeMenu') : t('common.openMenu')}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 text-deep xl:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/50 text-deep focus-visible:ring-offset-0 xl:hidden"
           >
             {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
           </button>

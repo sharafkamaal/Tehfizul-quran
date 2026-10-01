@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { ArrowRight } from 'lucide-react';
@@ -20,7 +21,7 @@ export default function DepartmentsPage({ params: { locale } }: { params: { loca
 
   return (
     <>
-      <PageHero title={t('hero.title')} subtitle={t('hero.subtitle')} />
+      <PageHero title={t('hero.title')} subtitle={t('hero.subtitle')} image="/images/gallery/classes-2.jpg" />
 
       <section className="py-20 md:py-28">
         <div className="container">
@@ -41,7 +42,8 @@ export default function DepartmentsPage({ params: { locale } }: { params: { loca
       <section className="pb-20 md:pb-28">
         <div className="container">
           <Reveal className="relative overflow-hidden rounded-[2rem] bg-deep px-6 py-12 text-center text-cream md:px-12">
-            <div className="bg-pattern absolute inset-0 opacity-10" aria-hidden="true" />
+            <Image src="/images/hero/hero-3.jpg" alt="" fill sizes="100vw" className="object-cover" />
+            <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
             <div className="relative">
               <h2 className="text-balance text-3xl font-bold">{t('cta.title')}</h2>
               <Ornament tone="light" className="mx-auto my-4" />

@@ -8,11 +8,14 @@ import { ChevronLeft, ChevronRight, Pause, Play, HeartHandshake } from 'lucide-r
 import { useLocale, useTranslations } from 'next-intl';
 import { Link, isRtl, type Locale } from '@/i18n/routing';
 import { site } from '@/lib/site';
-import { Ornament } from '../ui/Ornament';
 
-const INTERVAL = 6500;
-const scripts = ['ar', 'ur', 'en'] as const;
+const INTERVAL = 7000;
+const ease = [0.22, 1, 0.36, 1] as const;
 
+/**
+ * Full-bleed photo hero. Photos keep their natural colours – only a soft dark
+ * gradient at the bottom carries the (deliberately short) text.
+ */
 export function HeroSlider() {
   const t = useTranslations();
   const locale = useLocale() as Locale;
@@ -33,106 +36,108 @@ export function HeroSlider() {
   const rtl = isRtl(locale);
   const PrevIcon = rtl ? ChevronRight : ChevronLeft;
   const NextIcon = rtl ? ChevronLeft : ChevronRight;
+  const script = locale === 'en' ? 'en' : locale;
 
   return (
     <section
       aria-roledescription="carousel"
       aria-label={site.names[locale]}
-      className="relative isolate flex min-h-[640px] items-center overflow-hidden bg-deep-900 md:min-h-[88vh]"
+      className="relative isolate flex min-h-[600px] items-end overflow-hidden bg-deep-900 md:min-h-[90vh]"
     >
-      {/* Slides */}
+      {/* Slides: each new photo is revealed with a rising wipe while slowly zooming out */}
       <AnimatePresence initial={false}>
         <motion.div
           key={index}
           className="absolute inset-0 -z-20"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2 }}
+          initial={reduce ? { opacity: 0 } : { clipPath: 'inset(100% 0% 0% 0%)' }}
+          animate={reduce ? { opacity: 1 } : { clipPath: 'inset(0% 0% 0% 0%)' }}
+          exit={{ opacity: 1, transition: { duration: 1.4 } }}
+          transition={{ duration: 1.3, ease }}
           role="group"
           aria-roledescription="slide"
           aria-label={`${index + 1} / ${images.length}`}
         >
           <motion.div
             className="absolute inset-0"
-            initial={{ scale: 1.08 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: INTERVAL / 1000 + 1.5, ease: 'linear' }}
+            initial={{ scale: 1.18 }}
+            animate={{ scale: 1.02 }}
+            transition={{ duration: INTERVAL / 1000 + 2, ease: 'linear' }}
           >
-            {/* TODO: replace /public/images/hero/*.jpg with real photographs (see content/site.json → heroImages) */}
             <Image
               src={images[index]}
               alt={alts[index] ?? ''}
               fill
               priority={index === 0}
               sizes="100vw"
-              quality={70}
+              quality={78}
               className="object-cover"
             />
           </motion.div>
         </motion.div>
       </AnimatePresence>
 
-      {/* Dark-green overlay + pattern */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-deep-900/85 via-deep/80 to-deep-900/95" aria-hidden="true" />
-      <div className="bg-pattern absolute inset-0 -z-10 opacity-[0.12]" aria-hidden="true" />
+      {/* Only a soft shade at the bottom for legibility – no colour tint */}
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-[75%] bg-gradient-to-t from-black/80 via-black/45 to-transparent" aria-hidden="true" />
+      <div className="absolute inset-x-0 top-0 -z-10 h-32 bg-gradient-to-b from-black/25 to-transparent" aria-hidden="true" />
 
-      <div className="container relative pb-36 pt-16 text-center text-cream md:pb-44 md:pt-24">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="mx-auto flex max-w-4xl flex-col items-center"
-        >
-          <p className="rounded-full border border-gold/50 bg-deep-900/40 px-4 py-1.5 text-xs font-medium text-gold-light backdrop-blur-sm md:text-sm">
-            {t('hero.eyebrow')}
-          </p>
+      <div className="container relative pb-40 pt-28 text-white md:pb-32 md:pt-40">
+        <div className="grid items-end gap-8 lg:grid-cols-[1fr_auto]">
+          <div className="max-w-3xl">
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: 72 }}
+              transition={{ duration: 0.9, delay: 0.3, ease }}
+              className="mb-5 h-1 rounded-full bg-gold"
+              aria-hidden="true"
+            />
+            <h1
+              lang={script}
+              dir={rtl ? 'rtl' : 'ltr'}
+              className={clsx(
+                'text-balance font-bold leading-[1.15] drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]',
+                locale === 'en' ? 'text-3xl sm:text-4xl lg:text-5xl' : `script-${locale} text-2xl sm:text-4xl lg:text-5xl`,
+              )}
+            >
+              {site.names[locale]}
+            </h1>
 
-          <div className="mt-8 flex flex-col items-center gap-2">
-            {scripts.map((s) => {
-              const Tag = s === locale ? 'h1' : 'p';
-              return (
-                <Tag
-                  key={s}
-                  lang={s}
-                  dir={s === 'en' ? 'ltr' : 'rtl'}
-                  className={clsx(
-                    `script-${s} text-balance`,
-                    s === 'ar' && 'text-3xl font-bold text-cream sm:text-4xl md:text-5xl',
-                    s === 'ur' && 'text-xl text-cream/90 sm:text-2xl md:text-3xl',
-                    s === 'en' && 'max-w-3xl text-sm font-medium uppercase tracking-[0.18em] text-gold-light md:text-base',
-                  )}
+            {/* Caption changes with every slide */}
+            <div className="mt-5 min-h-[3.5rem]">
+              <AnimatePresence mode="wait">
+                <motion.p
+                  key={index}
+                  initial={{ opacity: 0, y: 14 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.5, ease }}
+                  className="max-w-xl text-base text-white/90 md:text-lg"
                 >
-                  {site.names[s]}
-                </Tag>
-              );
-            })}
+                  {alts[index]}
+                </motion.p>
+              </AnimatePresence>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3 sm:gap-4">
+              <Link href="/donate" className="btn-gold !px-6 !py-3 text-sm sm:!px-8 sm:!py-3.5 sm:text-base">
+                <HeartHandshake className="h-5 w-5" aria-hidden="true" />
+                {t('common.donateNow')}
+              </Link>
+              <Link href="/about" className="btn-outline-light !px-6 !py-3 text-sm sm:!px-8 sm:!py-3.5 sm:text-base">
+                {t('common.learnMore')}
+              </Link>
+            </div>
           </div>
 
-          <Ornament tone="light" className="my-8 w-56" />
-
-          <figure>
-            <blockquote lang="ar" dir="rtl" className="script-ar text-2xl text-gold-light md:text-4xl">
-              {site.hadith}
-            </blockquote>
-            {locale !== 'ar' && <p className="mt-3 text-base text-cream/90 md:text-lg">{t('hero.hadithTranslation')}</p>}
-            <figcaption className="mt-1 text-sm text-cream/70">— {t('hero.hadithSource')}</figcaption>
-          </figure>
-
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Link href="/donate" className="btn-gold !px-8 !py-3.5 text-base">
-              <HeartHandshake className="h-5 w-5" aria-hidden="true" />
-              {t('common.donateNow')}
-            </Link>
-            <Link href="/about" className="btn-outline-light !px-8 !py-3.5 text-base">
-              {t('common.learnMore')}
-            </Link>
-          </div>
-        </motion.div>
+          {/* Slide counter */}
+          <p className="hidden select-none font-latin text-white/80 lg:block" dir="ltr" aria-hidden="true">
+            <span className="text-6xl font-light text-white">{String(index + 1).padStart(2, '0')}</span>
+            <span className="ms-2 text-lg">/ {String(images.length).padStart(2, '0')}</span>
+          </p>
+        </div>
       </div>
 
-      {/* Controls */}
-      <div className="absolute inset-x-0 bottom-20 flex items-center justify-center gap-3 md:bottom-28">
+      {/* Controls with a progress bar on the active dot */}
+      <div className="absolute inset-x-0 bottom-24 flex items-center justify-center gap-3 md:bottom-24">
         <button type="button" onClick={() => go(index - 1)} aria-label={t('hero.prev')} className="hero-ctrl">
           <PrevIcon className="h-4 w-4" aria-hidden="true" />
         </button>
@@ -144,14 +149,19 @@ export function HeroSlider() {
                 onClick={() => go(i)}
                 aria-label={t('hero.goTo', { n: i + 1 })}
                 aria-current={i === index ? 'true' : undefined}
-                className="group flex h-6 items-center"
+                className="flex h-6 items-center"
               >
-                <span
-                  className={clsx(
-                    'block h-1.5 rounded-full transition-all duration-500',
-                    i === index ? 'w-8 bg-gold' : 'w-3 bg-cream/50 group-hover:bg-cream',
+                <span className={clsx('relative block h-1.5 overflow-hidden rounded-full bg-white/40 transition-all duration-500', i === index ? 'w-12' : 'w-3')}>
+                  {i === index && (
+                    <motion.span
+                      key={`${index}-${playing}`}
+                      className="absolute inset-y-0 start-0 block rounded-full bg-gold"
+                      initial={{ width: reduce || !playing ? '100%' : '0%' }}
+                      animate={{ width: '100%' }}
+                      transition={{ duration: reduce || !playing ? 0 : INTERVAL / 1000, ease: 'linear' }}
+                    />
                   )}
-                />
+                </span>
               </button>
             </li>
           ))}

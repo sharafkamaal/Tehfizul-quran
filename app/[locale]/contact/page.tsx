@@ -20,7 +20,7 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
 
   return (
     <>
-      <PageHero title={t('contact.hero.title')} subtitle={t('contact.hero.subtitle')} />
+      <PageHero title={t('contact.hero.title')} subtitle={t('contact.hero.subtitle')} image="/images/hero/hero-4.jpg" />
 
       <section className="py-20 md:py-28">
         <div className="container grid gap-10 lg:grid-cols-[1fr_1.4fr]">

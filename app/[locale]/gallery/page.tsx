@@ -16,7 +16,7 @@ export default function GalleryPage({ params: { locale } }: { params: { locale: 
   const t = useTranslations('gallery');
   return (
     <>
-      <PageHero title={t('hero.title')} subtitle={t('hero.subtitle')} />
+      <PageHero title={t('hero.title')} subtitle={t('hero.subtitle')} image="/images/hero/hero-5.jpg" />
       <section className="py-16 md:py-24">
         <div className="container">
           <Gallery />

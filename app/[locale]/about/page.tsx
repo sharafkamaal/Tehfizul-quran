@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { Crown, UserRound } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
 import { buildMetadata } from '@/lib/metadata';
 import { site } from '@/lib/site';
@@ -23,7 +22,7 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
 
   return (
     <>
-      <PageHero title={t('about.hero.title')} subtitle={t('about.hero.subtitle')} />
+      <PageHero title={t('about.hero.title')} subtitle={t('about.hero.subtitle')} image="/images/hero/hero-2.jpg" />
 
       {/* Story */}
       <section className="py-20 md:py-28">
@@ -48,8 +47,8 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
               <h2 className="text-lg font-bold text-deep">{t('about.leadership.title')}</h2>
               <ul className="mt-4 grid gap-4">
                 <li className="flex gap-3">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/20 text-gold-dark">
-                    <Crown className="h-5 w-5" aria-hidden="true" />
+                  <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full ring-2 ring-gold">
+                    <Image src="/images/founder-sm.jpg" alt={t('about.memorial.name')} fill sizes="3.5rem" className="object-cover" />
                   </span>
                   <div>
                     <p className="text-xs text-ink-muted">{t('about.leadership.founderRole')}</p>
@@ -57,8 +56,8 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-50 text-primary-700">
-                    <UserRound className="h-5 w-5" aria-hidden="true" />
+                  <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full ring-2 ring-primary-700/60">
+                    <Image src="/images/principal-sm.jpg" alt={t('about.leadership.headName')} fill sizes="3.5rem" className="object-cover" />
                   </span>
                   <div>
                     <p className="text-xs text-ink-muted">{t('about.leadership.headRole')}</p>
@@ -68,6 +67,22 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
               </ul>
             </Reveal>
           </aside>
+        </div>
+      </section>
+
+      {/* Photo band */}
+      <section aria-hidden="true" className="pb-20 md:pb-28">
+        <div className="container grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+          {[
+            ['/images/gallery/classes-2.jpg', 'md:col-span-2 md:row-span-2'],
+            ['/images/gallery/events-1.jpg', ''],
+            ['/images/gallery/dastarbandi-9.jpg', ''],
+            ['/images/gallery/campus-5.jpg', 'col-span-2'],
+          ].map(([src, cls], i) => (
+            <Reveal key={src} delay={i * 0.07} className={`relative aspect-[4/3] overflow-hidden rounded-3xl shadow-card ${cls}`}>
+              <Image src={src} alt="" fill sizes="(min-width: 768px) 25vw, 50vw" className="object-cover transition duration-700 hover:scale-105" />
+            </Reveal>
+          ))}
         </div>
       </section>
 

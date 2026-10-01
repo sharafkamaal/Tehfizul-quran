@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Phone, Quote } from 'lucide-react';
@@ -29,7 +30,7 @@ export default function DonatePage({ params: { locale } }: { params: { locale: s
 
   return (
     <>
-      <PageHero title={t('donate.hero.title')} subtitle={t('donate.hero.subtitle')} />
+      <PageHero title={t('donate.hero.title')} subtitle={t('donate.hero.subtitle')} image="/images/hero/hero-3.jpg" />
 
       {/* Ayah */}
       <section className="py-14 md:py-20">
@@ -53,6 +54,10 @@ export default function DonatePage({ params: { locale } }: { params: { locale: s
             </Reveal>
           </div>
           <div className="grid gap-6">
+            <Reveal className="relative aspect-[16/9] overflow-hidden rounded-[2rem] shadow-soft">
+              <Image src="/images/gallery/dastarbandi-16.jpg" alt="" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" aria-hidden="true" />
+            </Reveal>
             <Reveal className="relative overflow-hidden rounded-[2rem] bg-deep p-8 text-cream shadow-soft">
               <div className="bg-pattern absolute inset-0 opacity-10" aria-hidden="true" />
               <Quote className="relative h-8 w-8 text-gold rtl:-scale-x-100" aria-hidden="true" />

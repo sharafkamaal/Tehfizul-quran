@@ -31,6 +31,24 @@ export function Footer() {
             <p className="text-lg font-bold leading-snug">{t('common.shortName')}<br /><span className="text-sm font-normal text-gold-light">{t('common.subName')}</span></p>
           </div>
           <p className="mt-5 text-sm text-cream/80">{t('footer.about')}</p>
+          <Link href="/about" className="group mt-5 flex w-fit items-center gap-3 rounded-full border border-gold/30 py-1.5 pe-5 ps-1.5 transition hover:border-gold hover:bg-gold/10">
+            <span className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-gold">
+              <Image src="/images/founder-sm.jpg" alt="" fill sizes="3rem" className="object-cover" />
+            </span>
+            <span className="text-sm leading-tight">
+              <span className="block text-[11px] text-gold-light">{t('about.leadership.founderRole')}</span>
+              <span className="block font-semibold">{t('about.memorial.name')} <span className="font-normal text-cream/70">{t('about.memorial.honorific')}</span></span>
+            </span>
+          </Link>
+          <Link href="/about" className="group mt-3 flex w-fit items-center gap-3 rounded-full border border-gold/30 py-1.5 pe-5 ps-1.5 transition hover:border-gold hover:bg-gold/10">
+            <span className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-gold">
+              <Image src="/images/principal-sm.jpg" alt="" fill sizes="3rem" className="object-cover" />
+            </span>
+            <span className="text-sm leading-tight">
+              <span className="block text-[11px] text-gold-light">{t('about.leadership.headRole')}</span>
+              <span className="block font-semibold">{t('about.leadership.headName')}</span>
+            </span>
+          </Link>
           <p lang="ar" dir="rtl" className="script-ar mt-5 w-fit text-xl text-gold-light">{site.hadith}</p>
 
           <h2 className="mt-8 text-sm font-semibold text-gold-light">{t('footer.follow')}</h2>

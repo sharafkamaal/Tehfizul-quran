@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Clock } from 'lucide-react';
@@ -22,7 +23,7 @@ export default function AdmissionsPage({ params: { locale } }: { params: { local
 
   return (
     <>
-      <PageHero title={t('admissions.hero.title')} subtitle={t('admissions.hero.subtitle')} />
+      <PageHero title={t('admissions.hero.title')} subtitle={t('admissions.hero.subtitle')} image="/images/gallery/classes-9.jpg" />
 
       <section className="py-20 md:py-28">
         <div className="container">
@@ -46,6 +47,10 @@ export default function AdmissionsPage({ params: { locale } }: { params: { local
       <section className="bg-white py-20 md:py-28">
         <div className="container grid gap-12 lg:grid-cols-[1fr_1.3fr]">
           <div className="grid content-start gap-8">
+            <Reveal className="relative aspect-[16/10] overflow-hidden rounded-[2rem] shadow-soft">
+              <Image src="/images/gallery/classes-2.jpg" alt="" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" aria-hidden="true" />
+            </Reveal>
             <Reveal className="relative overflow-hidden rounded-[2rem] bg-deep p-8 text-cream">
               <div className="bg-pattern absolute inset-0 opacity-10" aria-hidden="true" />
               <div className="relative">

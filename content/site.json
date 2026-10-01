@@ -1,20 +1,16 @@
 {
   "_readme": "Language-neutral data shared by all three languages. Edit numbers, phones, bank details and image lists here. Visible text lives in en.json / ur.json / ar.json.",
-
   "names": {
     "en": "Al Madrasatul Arabia Li-Tahfeezil Quranil Kareem & Madrasatut Tayyibaat Lil Banaat",
     "ar": "المدرسة العربية لتحفيظ القرآن الكريم ومدرسة الطيبات للبنات",
     "ur": "مدرسہ عربیہ تحفیظ القرآن الکریم و مدرسۃ الطیبات للبنات، تاڑبن حیدرآباد"
   },
-
   "ticker": {
     "en": "Donate Now and Make a Difference",
     "ur": "ابھی عطیہ کریں اور تبدیلی لائیں",
     "ar": "تبرّع الآن وكن سببًا في التغيير"
   },
-
   "hadith": "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
-
   "phones": [
     {
       "_todo": "TODO: The brochure shows 88019974425 (11 digits – looks like a typo). Put the correct 10-digit number in 'number' and 'tel', then set confirmed to true. Unconfirmed numbers are NOT shown on the site.",
@@ -31,19 +27,16 @@
   "whatsapp": "918328680259",
   "email": "info@example.org",
   "_emailTodo": "TODO: replace info@example.org with the madrasa's real e-mail address.",
-
   "map": {
     "embedUrl": "https://maps.google.com/maps?q=Tadban%2C%20Hyderabad%2C%20Telangana%20500064&z=15&output=embed",
     "linkUrl": "https://www.google.com/maps/search/?api=1&query=Masjid+Umar+Farooq+Tadban+Hyderabad+500064"
   },
-
   "social": {
     "_todo": "TODO: add real profile URLs. Empty values render as disabled 'coming soon' icons.",
     "facebook": "",
     "instagram": "",
     "youtube": ""
   },
-
   "bank": {
     "accountName": "Al Madrasatul Arabia Li-Tahfeezil Quranil Kareem",
     "accountNumber": "1029187342",
@@ -55,61 +48,568 @@
     "upiQr": "/images/upi-qr-placeholder.png",
     "_upiTodo": "TODO: replace /public/images/upi-qr-placeholder.png with the real UPI QR image and set upiId."
   },
-
   "stats": [
-    { "id": "founded", "value": 1994, "suffix": "", "plain": true },
-    { "id": "students", "value": 600, "suffix": "+" },
-    { "id": "teachers", "value": 55, "suffix": "+" },
-    { "id": "huffaz", "value": 1800, "suffix": "+" },
-    { "id": "nazira", "value": null }
+    {
+      "id": "founded",
+      "value": 1994,
+      "suffix": "",
+      "plain": true
+    },
+    {
+      "id": "students",
+      "value": 600,
+      "suffix": "+"
+    },
+    {
+      "id": "teachers",
+      "value": 55,
+      "suffix": "+"
+    },
+    {
+      "id": "huffaz",
+      "value": 1800,
+      "suffix": "+"
+    },
+    {
+      "id": "nazira",
+      "value": null
+    }
   ],
-
   "needs": [
-    { "id": "floor", "icon": "building", "goal": 7500000, "raised": 0 },
-    { "id": "wiring", "icon": "zap", "goal": 1000000, "raised": 0 },
-    { "id": "sound", "icon": "speaker", "goal": 500000, "raised": 0 },
-    { "id": "generator", "icon": "power", "goal": 500000, "raised": 0 },
-    { "id": "borewell", "icon": "droplet", "goal": 400000, "raised": 0 }
+    {
+      "id": "floor",
+      "icon": "building",
+      "goal": 7500000,
+      "raised": 0
+    },
+    {
+      "id": "wiring",
+      "icon": "zap",
+      "goal": 1000000,
+      "raised": 0
+    },
+    {
+      "id": "sound",
+      "icon": "speaker",
+      "goal": 500000,
+      "raised": 0
+    },
+    {
+      "id": "generator",
+      "icon": "power",
+      "goal": 500000,
+      "raised": 0
+    },
+    {
+      "id": "borewell",
+      "icon": "droplet",
+      "goal": 400000,
+      "raised": 0
+    }
   ],
-
   "departments": [
-    { "id": "hifz", "icon": "book", "names": { "en": "Hifz", "ur": "شعبۂ حفظ", "ar": "قسم التحفيظ" } },
-    { "id": "nazira", "icon": "reading", "names": { "en": "Nazira", "ur": "شعبۂ ناظرہ", "ar": "قسم القراءة (الناظرة)" } },
-    { "id": "diniyat", "icon": "scale", "names": { "en": "Diniyat", "ur": "شعبۂ دینیات", "ar": "قسم العلوم الدينية" } },
-    { "id": "parttime", "icon": "clock", "names": { "en": "Part-time Quran Classes", "ur": "جز وقتی تعلیم", "ar": "الدروس القرآنية المسائية" } },
-    { "id": "arabic", "icon": "languages", "names": { "en": "Arabic", "ur": "شعبۂ عربی", "ar": "قسم اللغة العربية" } },
-    { "id": "oratory", "icon": "mic", "names": { "en": "Speech & Oratory", "ur": "شعبۂ تقریر و خطابت", "ar": "قسم الخطابة والإلقاء" } },
-    { "id": "tazkiyah", "icon": "heart", "names": { "en": "Tas-heeh & Tazkiyah", "ur": "شعبۂ تصحیح و تزکیہ", "ar": "قسم التصحيح والتزكية" } }
+    {
+      "id": "hifz",
+      "icon": "book",
+      "names": {
+        "en": "Hifz",
+        "ur": "شعبۂ حفظ",
+        "ar": "قسم التحفيظ"
+      }
+    },
+    {
+      "id": "nazira",
+      "icon": "reading",
+      "names": {
+        "en": "Nazira",
+        "ur": "شعبۂ ناظرہ",
+        "ar": "قسم القراءة (الناظرة)"
+      }
+    },
+    {
+      "id": "diniyat",
+      "icon": "scale",
+      "names": {
+        "en": "Diniyat",
+        "ur": "شعبۂ دینیات",
+        "ar": "قسم العلوم الدينية"
+      }
+    },
+    {
+      "id": "parttime",
+      "icon": "clock",
+      "names": {
+        "en": "Part-time Quran Classes",
+        "ur": "جز وقتی تعلیم",
+        "ar": "الدروس القرآنية المسائية"
+      }
+    },
+    {
+      "id": "arabic",
+      "icon": "languages",
+      "names": {
+        "en": "Arabic",
+        "ur": "شعبۂ عربی",
+        "ar": "قسم اللغة العربية"
+      }
+    },
+    {
+      "id": "oratory",
+      "icon": "mic",
+      "names": {
+        "en": "Speech & Oratory",
+        "ur": "شعبۂ تقریر و خطابت",
+        "ar": "قسم الخطابة والإلقاء"
+      }
+    },
+    {
+      "id": "tazkiyah",
+      "icon": "heart",
+      "names": {
+        "en": "Tas-heeh & Tazkiyah",
+        "ur": "شعبۂ تصحیح و تزکیہ",
+        "ar": "قسم التصحيح والتزكية"
+      }
+    }
   ],
-
   "heroImages": [
-    { "src": "/images/hero/hero-1.jpg", "_todo": "TODO: replace with a real wide photo (1920x1080) of the madrasa" },
-    { "src": "/images/hero/hero-2.jpg", "_todo": "TODO: replace with a real photo of a Hifz class" },
-    { "src": "/images/hero/hero-3.jpg", "_todo": "TODO: replace with a real photo of a Dastarbandi / event" }
+    {
+      "src": "/images/hero/hero-1.jpg"
+    },
+    {
+      "src": "/images/hero/hero-2.jpg"
+    },
+    {
+      "src": "/images/hero/hero-3.jpg"
+    },
+    {
+      "src": "/images/hero/hero-4.jpg"
+    },
+    {
+      "src": "/images/hero/hero-5.jpg"
+    }
   ],
-
   "gallery": [
-    { "src": "/images/gallery/classes-1.jpg", "category": "classes", "width": 800, "height": 1100 },
-    { "src": "/images/gallery/events-1.jpg", "category": "events", "width": 1000, "height": 1000 },
-    { "src": "/images/gallery/dastarbandi-1.jpg", "category": "dastarbandi", "width": 1200, "height": 900 },
-    { "src": "/images/gallery/campus-1.jpg", "category": "campus", "width": 800, "height": 1000 },
-    { "src": "/images/gallery/girls-1.jpg", "category": "girls", "width": 1200, "height": 800 },
-    { "src": "/images/gallery/classes-2.jpg", "category": "classes", "width": 1000, "height": 1000 },
-    { "src": "/images/gallery/events-2.jpg", "category": "events", "width": 1200, "height": 900 },
-    { "src": "/images/gallery/dastarbandi-2.jpg", "category": "dastarbandi", "width": 800, "height": 1000 },
-    { "src": "/images/gallery/campus-2.jpg", "category": "campus", "width": 1200, "height": 800 },
-    { "src": "/images/gallery/girls-2.jpg", "category": "girls", "width": 800, "height": 1100 },
-    { "src": "/images/gallery/classes-3.jpg", "category": "classes", "width": 1200, "height": 900 },
-    { "src": "/images/gallery/events-3.jpg", "category": "events", "width": 800, "height": 1000 },
-    { "src": "/images/gallery/dastarbandi-3.jpg", "category": "dastarbandi", "width": 1200, "height": 800 },
-    { "src": "/images/gallery/campus-3.jpg", "category": "campus", "width": 800, "height": 1100 },
-    { "src": "/images/gallery/girls-3.jpg", "category": "girls", "width": 1000, "height": 1000 }
+    {
+      "src": "/images/gallery/classes-1.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/campus-1.jpg",
+      "category": "campus",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-1.jpg",
+      "category": "events",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "src": "/images/gallery/dastarbandi-1.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1066
+    },
+    {
+      "src": "/images/gallery/girls-1.jpg",
+      "category": "girls",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "src": "/images/gallery/classes-2.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/campus-2.jpg",
+      "category": "campus",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-2.jpg",
+      "category": "events",
+      "width": 1152,
+      "height": 544
+    },
+    {
+      "src": "/images/gallery/dastarbandi-2.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1066
+    },
+    {
+      "src": "/images/gallery/classes-3.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/campus-3.jpg",
+      "category": "campus",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-3.jpg",
+      "category": "events",
+      "width": 1152,
+      "height": 544
+    },
+    {
+      "src": "/images/gallery/dastarbandi-3.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1066
+    },
+    {
+      "src": "/images/gallery/classes-4.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/campus-4.jpg",
+      "category": "campus",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-4.jpg",
+      "category": "events",
+      "width": 413,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/dastarbandi-4.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1066
+    },
+    {
+      "src": "/images/gallery/classes-5.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/campus-5.jpg",
+      "category": "campus",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-5.jpg",
+      "category": "events",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/dastarbandi-5.jpg",
+      "category": "dastarbandi",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "src": "/images/gallery/classes-6.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/campus-6.jpg",
+      "category": "campus",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-6.jpg",
+      "category": "events",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/images/gallery/dastarbandi-6.jpg",
+      "category": "dastarbandi",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "src": "/images/gallery/classes-7.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-7.jpg",
+      "category": "events",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "src": "/images/gallery/dastarbandi-7.jpg",
+      "category": "dastarbandi",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "src": "/images/gallery/classes-8.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-8.jpg",
+      "category": "events",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "src": "/images/gallery/dastarbandi-8.jpg",
+      "category": "dastarbandi",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/classes-9.jpg",
+      "category": "classes",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-9.jpg",
+      "category": "events",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/dastarbandi-9.jpg",
+      "category": "dastarbandi",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-10.jpg",
+      "category": "events",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/dastarbandi-10.jpg",
+      "category": "dastarbandi",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-11.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-11.jpg",
+      "category": "dastarbandi",
+      "width": 414,
+      "height": 414
+    },
+    {
+      "src": "/images/gallery/events-12.jpg",
+      "category": "events",
+      "width": 1067,
+      "height": 1600
+    },
+    {
+      "src": "/images/gallery/dastarbandi-12.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-13.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-13.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-14.jpg",
+      "category": "events",
+      "width": 1067,
+      "height": 1600
+    },
+    {
+      "src": "/images/gallery/dastarbandi-14.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-15.jpg",
+      "category": "events",
+      "width": 1067,
+      "height": 1600
+    },
+    {
+      "src": "/images/gallery/dastarbandi-15.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-16.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-16.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-17.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-17.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-18.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-18.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-19.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-19.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-20.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-20.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-21.jpg",
+      "category": "events",
+      "width": 1067,
+      "height": 1600
+    },
+    {
+      "src": "/images/gallery/dastarbandi-21.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-22.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-22.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-23.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-23.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/events-24.jpg",
+      "category": "events",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-24.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-25.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-26.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-27.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "/images/gallery/dastarbandi-28.jpg",
+      "category": "dastarbandi",
+      "width": 1600,
+      "height": 1067
+    }
   ],
-  "_galleryTodo": "TODO: replace the placeholder files in /public/images/gallery with real photos. Keep width/height roughly matching each photo's real size. Girls' section photos must not show faces.",
-
+  "_galleryTodo": "Gallery photos come from the madrasa's own photo set. Keep width/height matching each photo's real size. Girls' section photos must not show faces.",
   "videos": [
-    { "youtubeId": "", "_todo": "TODO: paste the YouTube video ID (the part after watch?v=). Empty IDs show a 'coming soon' card." },
-    { "youtubeId": "" },
-    { "youtubeId": "" }
+    {
+      "youtubeId": "",
+      "_todo": "TODO: paste the YouTube video ID (the part after watch?v=). Empty IDs show a 'coming soon' card."
+    },
+    {
+      "youtubeId": ""
+    },
+    {
+      "youtubeId": ""
+    }
   ]
 }

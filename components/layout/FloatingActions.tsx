@@ -15,9 +15,9 @@ export function FloatingActions() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t('common.chatOnWhatsapp')}
-        className="fixed bottom-20 end-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ring-4 ring-white/70 transition hover:scale-105 md:bottom-6 md:end-6"
+        className="fixed bottom-[4.5rem] end-3 z-40 flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ring-2 ring-white/70 md:ring-4 transition hover:scale-105 md:bottom-6 md:end-6"
       >
-        <WhatsAppIcon className="h-7 w-7" />
+        <WhatsAppIcon className="h-6 w-6 md:h-7 md:w-7" />
         <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-[#25D366]/40 motion-reduce:hidden" />
       </a>
 

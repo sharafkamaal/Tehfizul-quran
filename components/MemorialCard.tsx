@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { Ornament, Star8 } from './ui/Ornament';
 
@@ -19,7 +20,14 @@ export function MemorialCard() {
           <p className="flex items-center justify-center gap-2 text-sm text-gold-light">
             <Star8 className="h-3 w-3" /> {t('eyebrow')} <Star8 className="h-3 w-3" />
           </p>
-          <h2 id="memorial-name" className="mt-6 text-3xl font-bold md:text-4xl">
+          <div className="relative mx-auto mt-8 w-48 md:w-56">
+            <div className="arch absolute -inset-2 border border-gold/60" aria-hidden="true" />
+            <div className="arch relative aspect-[4/5] overflow-hidden bg-deep shadow-gold ring-4 ring-gold/40">
+              <Image src="/images/founder.jpg" alt={t('name')} fill sizes="14rem" className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-deep-900/50 via-transparent to-transparent" aria-hidden="true" />
+            </div>
+          </div>
+          <h2 id="memorial-name" className="mt-8 text-3xl font-bold md:text-4xl">
             {t('name')}
           </h2>
           <p className="mt-1 text-gold-light">{t('honorific')}</p>

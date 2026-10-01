@@ -31,6 +31,7 @@ const config: Config = {
       borderRadius: { arch: '999px 999px 1.5rem 1.5rem' },
       keyframes: {
         ticker: { from: { transform: 'translateX(0)' }, to: { transform: 'translateX(-50%)' } },
+        'hero-zoom': { from: { transform: 'scale(1.12)' }, to: { transform: 'scale(1)' } },
         'ticker-rtl': { from: { transform: 'translateX(0)' }, to: { transform: 'translateX(50%)' } },
       },
       animation: {
