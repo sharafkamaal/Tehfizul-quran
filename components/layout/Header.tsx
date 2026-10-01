@@ -61,11 +61,11 @@ export function Header() {
             priority
             className="h-10 w-auto shrink-0 md:h-14"
           />
-          <span className="flex min-w-0 flex-col">
-            <span className="truncate text-base font-bold !leading-snug text-deep md:text-lg">
+          <span className="flex min-w-0 flex-col py-1">
+            <span className="text-sm font-bold !leading-[1.9] text-deep ltr:truncate ltr:!leading-snug sm:text-base md:text-lg">
               {t('common.shortName')}
             </span>
-            <span className="hidden truncate text-xs !leading-snug text-gold-dark min-[400px]:block md:text-sm">{t('common.subName')}</span>
+            <span className="hidden text-xs !leading-[1.9] text-gold-dark ltr:truncate ltr:!leading-snug min-[400px]:block md:text-sm">{t('common.subName')}</span>
           </span>
         </Link>
 
