@@ -611,5 +611,119 @@
     {
       "youtubeId": ""
     }
+  ],
+  "ulama": [
+    {
+      "src": "/images/ulama/ulama-1.jpg",
+      "width": 1080,
+      "height": 608
+    },
+    {
+      "src": "/images/ulama/ulama-2.jpg",
+      "width": 1080,
+      "height": 608
+    },
+    {
+      "src": "/images/ulama/ulama-3.jpg",
+      "width": 1080,
+      "height": 608
+    },
+    {
+      "src": "/images/ulama/ulama-4.jpg",
+      "width": 1080,
+      "height": 610
+    },
+    {
+      "src": "/images/ulama/ulama-5.jpg",
+      "width": 1080,
+      "height": 608
+    },
+    {
+      "src": "/images/ulama/ulama-6.jpg",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "src": "/images/ulama/ulama-7.jpg",
+      "width": 960,
+      "height": 1280
+    },
+    {
+      "src": "/images/ulama/ulama-8.jpg",
+      "width": 720,
+      "height": 1111
+    },
+    {
+      "src": "/images/ulama/ulama-9.jpg",
+      "width": 960,
+      "height": 1280
+    },
+    {
+      "src": "/images/ulama/ulama-10.jpg",
+      "width": 540,
+      "height": 959
+    },
+    {
+      "src": "/images/ulama/ulama-11.jpg",
+      "width": 720,
+      "height": 1280
+    },
+    {
+      "src": "/images/ulama/ulama-12.jpg",
+      "width": 720,
+      "height": 1600
+    },
+    {
+      "src": "/images/ulama/ulama-13.jpg",
+      "width": 720,
+      "height": 407
+    },
+    {
+      "src": "/images/ulama/ulama-14.jpg",
+      "width": 720,
+      "height": 1040
+    },
+    {
+      "src": "/images/ulama/ulama-15.jpg",
+      "width": 720,
+      "height": 719
+    },
+    {
+      "src": "/images/ulama/ulama-16.jpg",
+      "width": 720,
+      "height": 1040
+    },
+    {
+      "src": "/images/ulama/ulama-17.jpg",
+      "width": 720,
+      "height": 879
+    },
+    {
+      "src": "/images/ulama/ulama-18.jpg",
+      "width": 720,
+      "height": 1040
+    }
+  ],
+  "clippings": [
+    {
+      "src": "/images/ulama/clip-1.jpg",
+      "width": 720,
+      "height": 802
+    },
+    {
+      "src": "/images/ulama/clip-2.jpg",
+      "width": 720,
+      "height": 1047
+    },
+    {
+      "src": "/images/ulama/clip-3.jpg",
+      "width": 720,
+      "height": 372
+    },
+    {
+      "src": "/images/ulama/clip-4.jpg",
+      "width": 720,
+      "height": 595
+    }
   ]
 }

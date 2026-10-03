@@ -9,6 +9,7 @@ export type StatId = 'founded' | 'students' | 'teachers' | 'huffaz' | 'nazira';
 export interface Need { id: NeedId; icon: string; goal: number; raised: number }
 export interface Department { id: DepartmentId; icon: string; names: Record<Locale, string> }
 export interface GalleryImage { src: string; category: GalleryCategory; width: number; height: number }
+export interface Photo { src: string; width: number; height: number }
 export interface Stat { id: StatId; value: number | null; suffix?: string; plain?: boolean }
 
 export const site = {
@@ -28,6 +29,8 @@ export const site = {
   departments: data.departments as Department[],
   heroImages: data.heroImages.map((h) => h.src),
   gallery: data.gallery as GalleryImage[],
+  ulama: data.ulama as Photo[],
+  clippings: data.clippings as Photo[],
   videos: data.videos.map((v) => v.youtubeId),
 };
 

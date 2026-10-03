@@ -9,6 +9,7 @@ import { StatsBand } from '@/components/home/StatsBand';
 import { SectionTitle } from '@/components/SectionTitle';
 import { DepartmentCard } from '@/components/DepartmentCard';
 import { NeedCard } from '@/components/NeedCard';
+import { UlamaStrip } from '@/components/home/UlamaStrip';
 import { PhotoMosaic } from '@/components/home/PhotoMosaic';
 import { DonateCTA } from '@/components/DonateCTA';
 import { Reveal } from '@/components/Reveal';
@@ -182,6 +183,20 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
           <PhotoMosaic />
           <div className="mt-10 text-center">
             <Link href="/gallery" className="btn-outline">
+              {t('common.viewAll')}
+              <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Ulama & guests */}
+      <section className="py-20 md:py-28">
+        <div className="container">
+          <SectionTitle eyebrow={t('ulama.home.eyebrow')} title={t('ulama.home.title')} subtitle={t('ulama.home.subtitle')} />
+          <UlamaStrip />
+          <div className="mt-10 text-center">
+            <Link href="/ulama" className="btn-outline">
               {t('common.viewAll')}
               <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
             </Link>

@@ -77,7 +77,7 @@ export function Header() {
                   href={item.href}
                   aria-current={isActive(item.href) ? 'page' : undefined}
                   className={clsx(
-                    'relative rounded-full px-3 py-2 text-sm font-medium transition',
+                    'relative whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium transition',
                     isActive(item.href) ? 'text-deep' : 'text-ink/80 hover:text-deep',
                   )}
                 >
@@ -96,7 +96,7 @@ export function Header() {
 
         <div className="flex shrink-0 items-center gap-2">
           <LanguageSwitcher className="hidden sm:block" />
-          <Link href="/donate" className="btn-gold hidden !px-5 !py-2.5 md:inline-flex">
+          <Link href="/donate" className="btn-gold hidden !px-5 !py-2.5 md:inline-flex xl:hidden 2xl:inline-flex">
             <HeartHandshake className="h-4 w-4" aria-hidden="true" />
             {t('common.donateNow')}
           </Link>

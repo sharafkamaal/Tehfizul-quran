@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { locales, type Locale } from '@/i18n/routing';
 import { siteUrl } from './site';
 
-export type PageKey = 'home' | 'about' | 'departments' | 'donate' | 'gallery' | 'admissions' | 'contact';
+export type PageKey = 'home' | 'about' | 'departments' | 'donate' | 'gallery' | 'ulama' | 'admissions' | 'contact';
 
 export const pagePaths: Record<PageKey, string> = {
   home: '',
@@ -11,6 +11,7 @@ export const pagePaths: Record<PageKey, string> = {
   departments: '/departments',
   donate: '/donate',
   gallery: '/gallery',
+  ulama: '/ulama',
   admissions: '/admissions',
   contact: '/contact',
 };

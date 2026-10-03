@@ -27,6 +27,10 @@
       "contact": {
         "title": "Contact Us",
         "description": "Address, phone, WhatsApp and map for the madrasa in Tadban, Hyderabad 500064."
+      },
+      "ulama": {
+        "title": "Ulama & Honoured Guests",
+        "description": "Photos of scholars, guests and well-wishers honoured at Al Madrasatul Arabia in Tadban, Hyderabad, with newspaper tributes to the founder."
       }
     }
   },
@@ -64,7 +68,8 @@
     "donate": "Donate",
     "gallery": "Gallery",
     "admissions": "Admissions",
-    "contact": "Contact"
+    "contact": "Contact",
+    "ulama": "Ulama & Guests"
   },
   "hero": {
     "eyebrow": "Est. 1994 · Tadban, Hyderabad",
@@ -467,5 +472,34 @@
     "title": "Page not found",
     "text": "The page you are looking for does not exist or has been moved.",
     "home": "Back to home"
+  },
+  "ulama": {
+    "hero": {
+      "title": "Ulama & Honoured Guests",
+      "subtitle": "Moments of respect, gratitude and brotherhood at the madrasa."
+    },
+    "intro": {
+      "eyebrow": "Our honoured visitors",
+      "title": "Scholars, guests and well-wishers",
+      "text": "The madrasa has been blessed by the visits and duas of many ulama, community leaders and supporters. These photos keep some of those cherished moments."
+    },
+    "album": {
+      "eyebrow": "Photo album",
+      "title": "Moments of honour",
+      "subtitle": "Tap any photo to view it full size."
+    },
+    "press": {
+      "eyebrow": "In the news",
+      "title": "Newspaper tributes",
+      "subtitle": "Urdu newspapers remembered the founder, Hafiz Mohammed Abdul Ghani Sahab (R.A), and his service to the Quran. Tap a clipping to read it."
+    },
+    "home": {
+      "eyebrow": "Honoured guests",
+      "title": "Ulama & Guests",
+      "subtitle": "Scholars and well-wishers who have blessed the madrasa with their presence."
+    },
+    "imageAlt": "Ulama and guests – photo {n}",
+    "clippingAlt": "Newspaper tribute {n}",
+    "tapToRead": "Tap to read"
   }
 }
