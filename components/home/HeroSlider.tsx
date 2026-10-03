@@ -82,12 +82,12 @@ export function HeroSlider() {
 
       <div className="container relative pb-40 pt-28 text-white md:pb-32 md:pt-40">
         <div className="grid items-end gap-8 lg:grid-cols-[1fr_auto]">
-          <div className="max-w-3xl">
+          <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:text-start">
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: 72 }}
               transition={{ duration: 0.9, delay: 0.3, ease }}
-              className="mb-5 h-1 rounded-full bg-gold"
+              className="mx-auto mb-5 h-1 rounded-full bg-gold lg:mx-0"
               aria-hidden="true"
             />
             <h1
@@ -102,7 +102,7 @@ export function HeroSlider() {
             </h1>
 
             {/* Caption changes with every slide */}
-            <div className="mt-5 min-h-[3.5rem]">
+            <div className="mx-auto mt-5 min-h-[3.5rem] lg:mx-0">
               <AnimatePresence mode="wait">
                 <motion.p
                   key={index}
@@ -110,14 +110,14 @@ export function HeroSlider() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5, ease }}
-                  className="max-w-xl text-base text-white/90 md:text-lg"
+                  className="mx-auto max-w-xl text-base text-white/90 md:text-lg lg:mx-0"
                 >
                   {alts[index]}
                 </motion.p>
               </AnimatePresence>
             </div>
 
-            <div className="mt-6 flex flex-wrap gap-3 sm:gap-4">
+            <div className="mt-6 flex flex-wrap justify-center gap-3 sm:gap-4 lg:justify-start">
               <Link href="/donate" className="btn-gold !px-6 !py-3 text-sm sm:!px-8 sm:!py-3.5 sm:text-base">
                 <HeartHandshake className="h-5 w-5" aria-hidden="true" />
                 {t('common.donateNow')}
