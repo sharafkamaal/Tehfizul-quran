@@ -6,11 +6,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Volume2, VolumeX, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-const SEEN_KEY = 'welcome-video-seen';
 export const OPEN_WELCOME_VIDEO = 'open-welcome-video';
 
 /**
- * Welcome video. Opens once per browser session shortly after the page has loaded
+ * Welcome video. Opens on every full page load (open / reload) shortly after the page has loaded
  * (so it never delays first paint), and can be reopened from the hero "Watch video" button.
  * The file is only requested while the dialog is open.
  */
@@ -30,22 +29,10 @@ export function WelcomeVideo() {
   useEffect(() => {
     let timer: number | undefined;
     const schedule = () => {
-      try {
-        if (sessionStorage.getItem(SEEN_KEY)) return;
-        // Don't push a 5 MB video on visitors who asked to save data
-        const conn = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
-        if (conn?.saveData) return;
-      } catch {
-        /* storage blocked – still show once per page load */
-      }
-      timer = window.setTimeout(() => {
-        try {
-          sessionStorage.setItem(SEEN_KEY, '1');
-        } catch {
-          /* ignore */
-        }
-        setOpen(true);
-      }, 1200);
+      // Don't push a large video on visitors who asked to save data
+      const conn = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+      if (conn?.saveData) return;
+      timer = window.setTimeout(() => setOpen(true), 1200);
     };
     if (document.readyState === 'complete') schedule();
     else window.addEventListener('load', schedule, { once: true });
