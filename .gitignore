@@ -8,5 +8,5 @@ next-env.d.ts
 .vercel
 .DS_Store
 scratch
-photos
-video
+/photos
+/video
