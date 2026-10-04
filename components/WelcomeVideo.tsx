@@ -105,18 +105,18 @@ export function WelcomeVideo() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative aspect-video w-full bg-deep-900">
-              <Image src="/video/welcome-poster.jpg" alt="" fill sizes="(min-width: 896px) 56rem, 100vw" className="object-cover" priority />
+              <Image src="/video/welcome-poster-v2.jpg" alt="" fill sizes="(min-width: 896px) 56rem, 100vw" className="object-cover" priority />
               <video
                 ref={video}
                 className="absolute inset-0 h-full w-full object-contain"
-                src="/video/welcome.mp4"
-                poster="/video/welcome-poster.jpg"
+                src="/video/welcome-v2.mp4"
+                poster="/video/welcome-poster-v2.jpg"
                 autoPlay
                 muted={muted}
                 playsInline
                 controls
                 controlsList="nodownload"
-                preload="auto"
+                preload="metadata"
                 onEnded={close}
               />
             </div>
