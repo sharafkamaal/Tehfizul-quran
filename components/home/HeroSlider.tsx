@@ -4,10 +4,11 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import { useCallback, useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Pause, Play, HeartHandshake } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Pause, Play, HeartHandshake, CirclePlay } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link, isRtl, type Locale } from '@/i18n/routing';
 import { site } from '@/lib/site';
+import { OPEN_WELCOME_VIDEO } from '../WelcomeVideo';
 
 const INTERVAL = 7000;
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -76,6 +77,18 @@ export function HeroSlider() {
         </motion.div>
       </AnimatePresence>
 
+      {/* Fetch the next slide in the background (same srcset as the visible slide, so the browser reuses it) */}
+      <Image
+        src={images[(index + 1) % images.length]}
+        alt=""
+        width={1920}
+        height={1080}
+        sizes="100vw"
+        quality={78}
+        aria-hidden="true"
+        className="pointer-events-none absolute h-px w-px opacity-0"
+      />
+
       {/* Only a soft shade at the bottom for legibility – no colour tint */}
       <div className="absolute inset-x-0 bottom-0 -z-10 h-[75%] bg-gradient-to-t from-black/80 via-black/45 to-transparent" aria-hidden="true" />
       <div className="absolute inset-x-0 top-0 -z-10 h-32 bg-gradient-to-b from-black/25 to-transparent" aria-hidden="true" />
@@ -122,9 +135,10 @@ export function HeroSlider() {
                 <HeartHandshake className="h-5 w-5" aria-hidden="true" />
                 {t('common.donateNow')}
               </Link>
-              <Link href="/about" className="btn-outline-light !px-6 !py-3 text-sm sm:!px-8 sm:!py-3.5 sm:text-base">
-                {t('common.learnMore')}
-              </Link>
+              <button type="button" onClick={() => window.dispatchEvent(new Event(OPEN_WELCOME_VIDEO))} className="btn-outline-light !px-6 !py-3 text-sm sm:!px-8 sm:!py-3.5 sm:text-base">
+                <CirclePlay className="h-5 w-5" aria-hidden="true" />
+                {t('welcome.watch')}
+              </button>
             </div>
           </div>
 

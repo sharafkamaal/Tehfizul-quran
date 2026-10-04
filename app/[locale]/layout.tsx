@@ -11,6 +11,7 @@ import { TopTicker } from '@/components/layout/TopTicker';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { FloatingActions } from '@/components/layout/FloatingActions';
+import { WelcomeVideo } from '@/components/WelcomeVideo';
 import { MotionProvider } from '@/components/MotionProvider';
 
 export function generateStaticParams() {
@@ -77,6 +78,7 @@ export default async function LocaleLayout({
             <main id="main">{children}</main>
             <Footer />
             <FloatingActions />
+            <WelcomeVideo />
           </MotionProvider>
         </NextIntlClientProvider>
         <script
